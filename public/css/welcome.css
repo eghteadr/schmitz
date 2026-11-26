@@ -1,0 +1,141 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1D1D1F;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apple-style Frosted Glass Header with Scroll Morph */
+.apple-glass {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: saturate(180%) blur(24px);
+    -webkit-backdrop-filter: saturate(180%) blur(24px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.apple-glass.scrolled {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Apple Editorial Display Tracking */
+.apple-display {
+    letter-spacing: -0.038em;
+}
+.apple-subdisplay {
+    letter-spacing: -0.022em;
+}
+
+/* Architectural Ambient Mesh + Subtle Grid Behind Hero */
+.hero-ambient {
+    background-color: #FFFFFF;
+    background-image: 
+        radial-gradient(ellipse 65% 55% at 82% 20%, rgba(19, 41, 63, 0.065) 0%, rgba(184, 151, 88, 0.05) 45%, transparent 75%),
+        radial-gradient(ellipse 50% 45% at 12% 10%, rgba(184, 151, 88, 0.045) 0%, transparent 70%);
+}
+
+/* Interactive Apple Spotlight Bento Card */
+.bento-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.bento-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(184, 151, 88, 0.11),
+        transparent 45%
+    );
+    opacity: 0;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+.bento-card.dark-bento::before {
+    background: radial-gradient(
+        650px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(184, 151, 88, 0.20),
+        transparent 48%
+    );
+}
+.bento-card:hover::before {
+    opacity: 1;
+}
+.bento-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 56px -16px rgba(19, 41, 63, 0.11);
+}
+.bento-card.dark-bento:hover {
+    box-shadow: 0 32px 64px -16px rgba(11, 24, 38, 0.38);
+}
+
+/* Staggered Apple Spring Entrance Animations */
+@keyframes appleFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(22px) scale(0.988);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.hero-animate-1 { animation: appleFadeUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both; }
+.hero-animate-2 { animation: appleFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both; }
+.hero-animate-3 { animation: appleFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both; }
+.hero-animate-4 { animation: appleFadeUp 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.30s both; }
+.hero-animate-5 { animation: appleFadeUp 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.38s both; }
+
+/* Scroll Reveal Elements */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+
+/* Apple Sheet Modal Spring Transition */
+@keyframes modalSheetIn {
+    0% {
+        opacity: 0;
+        transform: translateY(28px) scale(0.96);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.modal-sheet-animate {
+    animation: modalSheetIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Floating Apple Dynamic Island Toast */
+.apple-toast {
+    transform: translate(-50%, 24px) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.apple-toast.show {
+    transform: translate(-50%, 0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Clean Minimal Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #FAFAFC; }
+::-webkit-scrollbar-thumb { background: #D2D2D7; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #86868B; }

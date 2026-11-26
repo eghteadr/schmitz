@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-schmitz-navy: #13293F;
+    --color-schmitz-navyMid: #1D3B58;
+    --color-schmitz-dark: #0B1826;
+    --color-schmitz-gold: #B89758;
+    --color-schmitz-goldSoft: #D8BF8A;
+    --color-schmitz-appleGray: #F5F5F7;
+    --color-schmitz-appleElevated: #FAFAFC;
+    --color-schmitz-appleText: #1D1D1F;
+    --color-schmitz-appleMuted: #6E6E73;
+
+}
