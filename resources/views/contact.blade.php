@@ -161,63 +161,6 @@
                                     </p>
                                 </div>
 
-                                <!-- Department 3: Product Sourcing & Procurement -->
-                                <div class="p-3.5 rounded-2xl bg-white/[0.05] border border-white/10 hover:border-[#B89758]/50 transition-all duration-300">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-xs font-semibold text-white">{{ __('contact.routing.dept3_title') }}</span>
-                                        <button type="button" onclick="copyEmailToClipboard('{{ $companySettings->email_sourcing }}', this)" class="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-[#B89758] text-[10px] text-white/90 hover:text-[#0B1826] font-medium transition-colors cursor-pointer" title="{{ __('contact.routing.copy_title') }}">
-                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                                            </svg>
-                                            <span class="copy-label" data-default-text="{{ __('contact.hero.copy') }}" data-copied-text="{{ __('contact.hero.copied') }}">{{ __('contact.hero.copy') }}</span>
-                                        </button>
-                                    </div>
-                                    <a href="mailto:{{ $companySettings->email_sourcing }}" class="text-sm font-mono text-[#D8BF8A] hover:underline block mb-0.5">
-                                        {{ $companySettings->email_sourcing }}
-                                    </a>
-                                    <p class="text-[11px] text-white/70 leading-relaxed font-light">
-                                        {{ __('contact.routing.dept3_desc') }}
-                                    </p>
-                                </div>
-
-                                <!-- Department 4: Shipment & Logistics Coordination -->
-                                <div class="p-3.5 rounded-2xl bg-white/[0.05] border border-white/10 hover:border-[#B89758]/50 transition-all duration-300">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-xs font-semibold text-white">{{ __('contact.routing.dept4_title') }}</span>
-                                        <button type="button" onclick="copyEmailToClipboard('{{ $companySettings->email_logistics }}', this)" class="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-[#B89758] text-[10px] text-white/90 hover:text-[#0B1826] font-medium transition-colors cursor-pointer" title="{{ __('contact.routing.copy_title') }}">
-                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                                            </svg>
-                                            <span class="copy-label" data-default-text="{{ __('contact.hero.copy') }}" data-copied-text="{{ __('contact.hero.copied') }}">{{ __('contact.hero.copy') }}</span>
-                                        </button>
-                                    </div>
-                                    <a href="mailto:{{ $companySettings->email_logistics }}" class="text-sm font-mono text-[#D8BF8A] hover:underline block mb-0.5">
-                                        {{ $companySettings->email_logistics }}
-                                    </a>
-                                    <p class="text-[11px] text-white/70 leading-relaxed font-light">
-                                        {{ __('contact.routing.dept4_desc') }}
-                                    </p>
-                                </div>
-
-                                <!-- Department 5: Commercial Documentation & Accounts -->
-                                <div class="p-3.5 rounded-2xl bg-white/[0.05] border border-white/10 hover:border-[#B89758]/50 transition-all duration-300">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-xs font-semibold text-white">{{ __('contact.routing.dept5_title') }}</span>
-                                        <button type="button" onclick="copyEmailToClipboard('{{ $companySettings->email_accounts }}', this)" class="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-[#B89758] text-[10px] text-white/90 hover:text-[#0B1826] font-medium transition-colors cursor-pointer" title="{{ __('contact.routing.copy_title') }}">
-                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                                            </svg>
-                                            <span class="copy-label" data-default-text="{{ __('contact.hero.copy') }}" data-copied-text="{{ __('contact.hero.copied') }}">{{ __('contact.hero.copy') }}</span>
-                                        </button>
-                                    </div>
-                                    <a href="mailto:{{ $companySettings->email_accounts }}" class="text-sm font-mono text-[#D8BF8A] hover:underline block mb-0.5">
-                                        {{ $companySettings->email_accounts }}
-                                    </a>
-                                    <p class="text-[11px] text-white/70 leading-relaxed font-light">
-                                        {{ __('contact.routing.dept5_desc') }}
-                                    </p>
-                                </div>
-
                             </div>
 
                             <!-- Desk Meta Notes -->
@@ -727,11 +670,11 @@
                                     <span class="text-[10px] uppercase tracking-wider text-[#6E6E73] font-semibold block">
                                         {{ __('contact.supplier.contact_label') }}
                                     </span>
-                                    <a href="mailto:{{ $companySettings->email_sourcing }}" class="text-sm font-mono font-semibold text-[#13293F] hover:text-[#B89758] transition-colors">
-                                        {{ $companySettings->email_sourcing }}
+                                    <a href="mailto:{{ $companySettings->email_trade }}" class="text-sm font-mono font-semibold text-[#13293F] hover:text-[#B89758] transition-colors">
+                                        {{ $companySettings->email_trade }}
                                     </a>
                                 </div>
-                                <button type="button" onclick="copyEmailToClipboard('{{ $companySettings->email_sourcing }}', this)" class="ml-2 inline-flex items-center space-x-1 px-3 py-1.5 rounded-full bg-white hover:bg-[#13293F] text-[11px] text-[#13293F] hover:text-white font-medium border border-black/10 transition-colors cursor-pointer" title="{{ __('contact.routing.copy_title') }}">
+                                <button type="button" onclick="copyEmailToClipboard('{{ $companySettings->email_trade }}', this)" class="ml-2 inline-flex items-center space-x-1 px-3 py-1.5 rounded-full bg-white hover:bg-[#13293F] text-[11px] text-[#13293F] hover:text-white font-medium border border-black/10 transition-colors cursor-pointer" title="{{ __('contact.routing.copy_title') }}">
                                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
                                     </svg>
