@@ -635,7 +635,7 @@
                     <div class="relative z-10">
                         <div class="h-60 bg-schmitz-navy overflow-hidden">
                             <img 
-                                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=85" 
+                                src="{{ asset('images/Modern Cotton Processing Mill.png') }}" 
                                 onerror="this.src='https://placehold.co/800x500/13293F/FFFFFF?text=TEXTILE+PROCESSING'"
                                 alt="{{ __('home.industries.sector1_img_alt') }}" 
                                 loading="lazy"
@@ -663,7 +663,7 @@
                     <div class="relative z-10">
                         <div class="h-60 bg-schmitz-navy overflow-hidden">
                             <img 
-                                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=85" 
+                                src="{{ asset('images/Precision Machined Parts Workshop.png') }}" 
                                 onerror="this.src='https://placehold.co/800x500/13293F/FFFFFF?text=INDUSTRIAL+MANUFACTURING'"
                                 alt="{{ __('home.industries.sector2_img_alt') }}" 
                                 loading="lazy"
@@ -691,7 +691,7 @@
                     <div class="relative z-10">
                         <div class="h-60 bg-schmitz-navy overflow-hidden">
                             <img 
-                                src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1000&q=85" 
+                                src="{{ asset('images/Engineering Design Review in Modern Office.png') }}" 
                                 onerror="this.src='https://placehold.co/800x500/13293F/FFFFFF?text=COMMERCIAL+PROCUREMENT'"
                                 alt="{{ __('home.industries.sector3_img_alt') }}" 
                                 loading="lazy"
