@@ -502,7 +502,7 @@
                     <div class="px-8 sm:px-10 pt-2 relative z-10">
                         <div class="h-52 sm:h-60 rounded-t-2xl overflow-hidden bg-schmitz-navy">
                             <img 
-                                src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1400&q=85" 
+                                src="{{ asset('images/Twilight at the Container Port.png') }}" 
                                 onerror="this.src='https://placehold.co/1100x520/13293F/FFFFFF?text=SUPPLY+CHAIN+%26+LOGISTICS'"
                                 alt="{{ __('home.services.card4_img_alt') }}" 
                                 loading="lazy"
