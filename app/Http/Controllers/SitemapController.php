@@ -17,7 +17,7 @@ class SitemapController extends Controller
             ['name' => 'contact', 'changefreq' => 'monthly', 'priority' => '0.8'],
         ];
 
-        $locales = ['en', 'tr', 'de'];
+        $locales = ['tr', 'en', 'de'];
         $lastmod = now()->toAtomString();
 
         $xml = ['<?xml version="1.0" encoding="UTF-8"?>'];
@@ -35,7 +35,7 @@ class SitemapController extends Controller
                 foreach ($locales as $altLoc) {
                     $xml[] = '    <xhtml:link rel="alternate" hreflang="' . $altLoc . '" href="' . e($alternates[$altLoc]) . '" />';
                 }
-                $xml[] = '    <xhtml:link rel="alternate" hreflang="x-default" href="' . e($alternates['en']) . '" />';
+                $xml[] = '    <xhtml:link rel="alternate" hreflang="x-default" href="' . e($alternates['tr']) . '" />';
                 $xml[] = '    <lastmod>' . $lastmod . '</lastmod>';
                 $xml[] = '    <changefreq>' . $page['changefreq'] . '</changefreq>';
                 $xml[] = '    <priority>' . $page['priority'] . '</priority>';

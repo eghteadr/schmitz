@@ -4,7 +4,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-14 border-b border-black/[0.06]">
             <div class="lg:col-span-5">
                 <a href="{{ route('home') }}" class="inline-block mb-4 focus:outline-none">
-                    <img src="{{ asset('images/logo.png') }}" alt="SCHMITZ" class="h-12 sm:h-14 w-auto object-contain">
+                    <img src="{{ asset('images/logo.png') }}" alt="SCHMITZ" class="h-16 sm:h-20 w-auto object-contain">
                 </a>
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-schmitz-carbon mb-3">
                     {{ __('messages.footer.tagline') }}
@@ -41,7 +41,7 @@
                     <div>
                         <span class="block text-[11px] text-schmitz-appleMuted mb-0.5">{{ __('messages.footer.official_email') }}</span>
                         <a href="mailto:{{ $companySettings->email_info }}" class="font-semibold text-schmitz-carbon hover:text-schmitz-gold transition-colors">{{ $companySettings->email_info }}</a>
-                        <span class="block text-[11px] mt-1">{{ $companySettings->email_trade }} • {{ $companySettings->email_sourcing }}</span>
+                        <span class="block text-[11px] mt-1">{{ $companySettings->email_trade }}</span>
                     </div>
                     <div>
                         <span class="block text-[11px] text-schmitz-appleMuted mb-0.5">{{ __('messages.footer.registered_company') }}</span>
@@ -49,6 +49,9 @@
                             {{ $companySettings->legal_name }}
                         </p>
                         <span class="text-[11px]">{{ $companySettings->country ?: __('messages.footer.country') }}</span>
+                        @if(! empty($companySettings->registered_address))
+                            <span class="block text-[11px] text-schmitz-appleMuted mt-1 leading-relaxed">{{ $companySettings->registered_address }}</span>
+                        @endif
                     </div>
                 </div>
             </div>

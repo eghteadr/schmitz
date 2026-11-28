@@ -58,7 +58,7 @@ return [
         'jurisdiction_label' => 'Land der Registrierung',
         'jurisdiction_val' => 'Republik Türkei',
         'office_label' => 'Eingetragener Firmensitz',
-        'office_ph' => '[Verifizierte Geschäftsadresse einfügen]',
+        'office_ph' => 'Cennetoğlu Mah. Yeşillik Cad. No:228-230/514 Karabağlar, 35110 Gaziemir / IZMIR',
         'tradereg_label' => 'Handelsregister / MERSİS-Daten',
         'tradereg_val' => '[Verifizierte Angaben einfügen]',
         'corridors_label' => 'Logistikkorridore',
@@ -167,6 +167,11 @@ return [
         'title' => 'Lieferantenkooperation',
         'desc' => 'SCHMITZ begrüßt zudem Vorstellungen von Herstellern, Exporteuren und gewerblichen Lieferanten, die an der Erörterung potenzieller Geschäftsmöglichkeiten interessiert sind. Lieferantenmitteilungen sollten eine kurze Unternehmensvorstellung, relevante Produktkategorien, verfügbare technische Informationen sowie geeignete kaufmännische Kontaktdaten enthalten.',
         'contact_label' => 'Lieferantenkontakt:',
-        'contact_email' => 'sourcing@schmitzglobal.com',
+    ],
+    'map' => [
+        'eyebrow' => 'HAUPTSITZ & EINGETRAGENER STANDORT',
+        'title' => 'İzmir, Republik Türkei',
+        'open_maps' => 'In Google Maps öffnen',
+        'badge_city' => '35110 Gaziemir / İZMİR',
     ],
 ];

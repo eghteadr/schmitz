@@ -1,10 +1,10 @@
 <header id="main-header" class="sticky top-0 z-40 apple-glass">
     <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
-        <div id="header-inner" class="flex items-center justify-between h-16 sm:h-[74px] transition-all duration-300">
+        <div id="header-inner" class="flex items-center justify-between h-[72px] sm:h-[88px] transition-all duration-300">
             
             <!-- SCHMITZ Logo -->
             <a href="{{ route('home') }}" class="flex items-center group focus:outline-none shrink-0">
-                <img src="{{ asset('images/logo.png') }}" alt="SCHMITZ" class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 ease-out group-hover:scale-[1.03]">
+                <img src="{{ asset('images/logo.png') }}" alt="SCHMITZ" class="h-[52px] sm:h-[68px] w-auto object-contain transition-transform duration-300 ease-out group-hover:scale-[1.03]">
             </a>
 
             <!-- Center Navigation Links -->
@@ -20,7 +20,7 @@
             <!-- Right Controls: Segmented Language Pill + Pill CTA -->
             <div class="flex items-center space-x-3 sm:space-x-4">
                 <div class="inline-flex items-center bg-schmitz-appleGray p-1 rounded-full border border-black/[0.05]" role="group" aria-label="Language Switcher">
-                    @foreach(['en' => 'EN', 'tr' => 'TR', 'de' => 'DE'] as $code => $label)
+                    @foreach(['tr' => 'TR', 'en' => 'EN', 'de' => 'DE'] as $code => $label)
                         @if(app()->getLocale() === $code)
                             <span class="px-2.5 py-1 text-[11px] font-semibold rounded-full bg-white text-[#18181B] shadow-2xs cursor-default">{{ $label }}</span>
                         @else
@@ -60,7 +60,7 @@
             <div class="pt-3 pb-2 flex items-center justify-between border-t border-black/5">
                 <span class="text-xs font-medium text-schmitz-appleMuted">{{ __('messages.nav.language') }}</span>
                 <div class="inline-flex items-center bg-schmitz-appleGray p-1 rounded-full border border-black/[0.05]" role="group" aria-label="Mobile Language Switcher">
-                    @foreach(['en' => 'EN', 'tr' => 'TR', 'de' => 'DE'] as $code => $label)
+                    @foreach(['tr' => 'TR', 'en' => 'EN', 'de' => 'DE'] as $code => $label)
                         @if(app()->getLocale() === $code)
                             <span class="px-3 py-1 text-xs font-semibold rounded-full bg-white text-[#18181B] shadow-2xs cursor-default">{{ $label }}</span>
                         @else

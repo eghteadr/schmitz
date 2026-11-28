@@ -32,10 +32,10 @@ class AppServiceProvider extends ServiceProvider
         // Allow named routes ('home', 'about', 'services', 'industries', 'contact')
         // to automatically resolve based on the active locale.
         app('url')->resolveMissingNamedRoutesUsing(function ($name, $parameters, $absolute) {
-            if (Route::has('en.' . $name)) {
+            if (Route::has('tr.' . $name)) {
                 $locale = app()->getLocale();
-                if ($locale === 'en' || !in_array($locale, ['tr', 'de'], true)) {
-                    return route('en.' . $name, $parameters, $absolute);
+                if ($locale === 'tr' || !in_array($locale, ['en', 'de'], true)) {
+                    return route('tr.' . $name, $parameters, $absolute);
                 }
                 return route('locale.' . $name, array_merge(['locale' => $locale], $parameters), $absolute);
             }

@@ -49,7 +49,9 @@
         'email' => $settings->email_info ?: 'info@schmitzglobal.com',
         'address' => [
             '@type' => 'PostalAddress',
-            'streetAddress' => $settings->registered_address ?: 'Republic of Türkiye',
+            'streetAddress' => $settings->registered_address ?: 'Cennetoğlu Mah. Yeşillik Cad. No:228-230/514 Karabağlar, 35110 Gaziemir / IZMIR',
+            'addressLocality' => 'Gaziemir, Izmir',
+            'postalCode' => '35110',
             'addressCountry' => 'TR',
         ],
         'contactPoint' => $contactPoints,
@@ -90,7 +92,7 @@
 <link rel="alternate" hreflang="en" href="{{ $hreflangEn }}">
 <link rel="alternate" hreflang="tr" href="{{ $hreflangTr }}">
 <link rel="alternate" hreflang="de" href="{{ $hreflangDe }}">
-<link rel="alternate" hreflang="x-default" href="{{ $hreflangEn }}">
+<link rel="alternate" hreflang="x-default" href="{{ $hreflangTr }}">
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="SCHMITZ">

@@ -92,12 +92,6 @@ class ManageCompanySettings extends Page implements HasForms
                             ->required()
                             ->maxLength(255),
 
-                        Forms\Components\TextInput::make('email_sourcing')
-                            ->label('ایمیل تأمین و تدارکات (Sourcing)')
-                            ->email()
-                            ->required()
-                            ->maxLength(255),
-
                         Forms\Components\TextInput::make('email_logistics')
                             ->label('ایمیل لجستیک و حمل‌ونقل (Logistics)')
                             ->email()

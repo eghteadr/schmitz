@@ -58,7 +58,7 @@ return [
         'jurisdiction_label' => 'Country of Registration',
         'jurisdiction_val' => 'Republic of Türkiye',
         'office_label' => 'Registered Office',
-        'office_ph' => '[Insert verified registered address]',
+        'office_ph' => 'Cennetoğlu Mah. Yeşillik Cad. No:228-230/514 Karabağlar, 35110 Gaziemir / IZMIR',
         'tradereg_label' => 'Trade Registry / MERSİS Information',
         'tradereg_val' => '[Insert verified information]',
         'corridors_label' => 'Logistics Corridors',
@@ -167,6 +167,11 @@ return [
         'title' => 'Supplier Cooperation',
         'desc' => 'SCHMITZ also welcomes introductions from manufacturers, exporters and commercial suppliers interested in discussing potential business opportunities. Supplier communications should include a brief company introduction, relevant product categories, available technical information and appropriate commercial contact details.',
         'contact_label' => 'Supplier Contact:',
-        'contact_email' => 'sourcing@schmitzglobal.com',
+    ],
+    'map' => [
+        'eyebrow' => 'HEADQUARTERS & REGISTERED OFFICE',
+        'title' => 'İzmir, Republic of Türkiye',
+        'open_maps' => 'Open in Google Maps',
+        'badge_city' => '35110 Gaziemir / İZMİR',
     ],
 ];

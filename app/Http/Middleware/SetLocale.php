@@ -27,10 +27,10 @@ class SetLocale
         $locale = $request->route('locale');
 
         if ($locale) {
-            // If someone accesses /en or /en/..., redirect to clean non-prefixed English route (301)
-            if ($locale === 'en') {
+            // If someone accesses /tr or /tr/..., redirect to clean non-prefixed Turkish route (301)
+            if ($locale === 'tr') {
                 $segments = $request->segments();
-                array_shift($segments); // Remove 'en'
+                array_shift($segments); // Remove 'tr'
                 $cleanUrl = '/' . implode('/', $segments);
                 $query = $request->getQueryString();
                 if ($query) {
@@ -47,9 +47,9 @@ class SetLocale
             App::setLocale($locale);
             URL::defaults(['locale' => $locale]);
         } else {
-            // Default English locale
-            App::setLocale('en');
-            URL::defaults(['locale' => 'en']);
+            // Default Turkish locale
+            App::setLocale('tr');
+            URL::defaults(['locale' => 'tr']);
         }
 
         return $next($request);

@@ -58,7 +58,7 @@ return [
         'jurisdiction_label' => 'Kayıtlı Olduğu Ülke',
         'jurisdiction_val' => 'Türkiye Cumhuriyeti',
         'office_label' => 'Kayıtlı Merkez Adresi',
-        'office_ph' => '[Doğrulanmış resmi adresi giriniz]',
+        'office_ph' => 'Cennetoğlu Mah. Yeşillik Cad. No:228-230/514 Karabağlar, 35110 Gaziemir / IZMIR',
         'tradereg_label' => 'Ticaret Sicil / MERSİS Bilgileri',
         'tradereg_val' => '[Doğrulanmış bilgileri giriniz]',
         'corridors_label' => 'Lojistik Koridorları',
@@ -167,6 +167,11 @@ return [
         'title' => 'Tedarikçi İş Birliği',
         'desc' => 'SCHMITZ, potansiyel iş fırsatlarını görüşmek isteyen üreticilerden, ihracatçılardan ve ticari tedarikçilerden gelecek tanıtımları da memnuniyetle karşılar. Tedarikçi başvurularında kısa bir şirket tanıtımı, ilgili ürün kategorileri, mevcut teknik bilgiler ve uygun ticari iletişim detayları yer almalıdır.',
         'contact_label' => 'Tedarikçi İletişimi:',
-        'contact_email' => 'sourcing@schmitzglobal.com',
+    ],
+    'map' => [
+        'eyebrow' => 'GENEL MERKEZ & KAYITLI OFİS',
+        'title' => 'İzmir, Türkiye Cumhuriyeti',
+        'open_maps' => 'Google Haritalar’da Aç',
+        'badge_city' => '35110 Gaziemir / İZMİR',
     ],
 ];

@@ -239,7 +239,7 @@
 
                             <div class="pt-3 border-t border-black/[0.05]">
                                 <span class="text-[10px] text-[#6E6E73] uppercase tracking-wider block mb-1">{{ __('contact.entity.office_label') }}</span>
-                                <span class="inline-block w-full px-3 py-2 rounded-xl bg-[#F5F5F7] border border-dashed border-[#B89758]/50 font-mono text-[11px] text-[#6E6E73]">
+                                <span class="inline-block w-full px-3 py-2 rounded-xl bg-[#F5F5F7] border border-black/[0.06] text-xs font-medium text-[#18181B] leading-relaxed">
                                     {{ $companySettings->registered_address ?: __('contact.entity.office_ph') }}
                                 </span>
                             </div>
@@ -689,6 +689,71 @@
                                     </svg>
                                     <span class="copy-label" data-default-text="{{ __('contact.hero.copy') }}" data-copied-text="{{ __('contact.hero.copied') }}">{{ __('contact.hero.copy') }}</span>
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Location Map Bento Card -->
+            @php
+                $mapAddress = $companySettings->registered_address ?: 'Cennetoğlu Mah. Yeşillik Cad. No:228-230/514 Karabağlar, 35110 Gaziemir / IZMIR';
+                $encodedMapAddress = urlencode($mapAddress);
+            @endphp
+            <div class="mt-10 lg:mt-14 reveal-up">
+                <div class="bento-card bg-white rounded-[30px] border border-black/[0.06] shadow-[0_16px_40px_rgba(0,0,0,0.03)] overflow-hidden group">
+                    <!-- Map Header Bar -->
+                    <div class="px-7 py-6 sm:px-10 sm:py-7 border-b border-black/[0.06] flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white">
+                        <div>
+                            <div class="flex items-center space-x-2.5 mb-2">
+                                <span class="w-2 h-2 rounded-full bg-[#B89758] animate-pulse"></span>
+                                <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B89758]">
+                                    {{ __('contact.map.eyebrow') }}
+                                </span>
+                            </div>
+                            <h3 class="apple-subdisplay text-xl sm:text-2xl font-bold text-[#18181B]">
+                                {{ __('contact.map.title') }}
+                            </h3>
+                            <p class="text-xs sm:text-sm text-[#6E6E73] mt-1">
+                                {{ $mapAddress }}
+                            </p>
+                        </div>
+
+                        <a href="https://www.google.com/maps/search/?api=1&query={{ $encodedMapAddress }}"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center space-x-2 px-5 py-2.5 rounded-full bg-[#18181B] hover:bg-[#27272A] text-white text-xs font-medium tracking-wide transition-all duration-300 shadow-xs hover:shadow-md active:scale-[0.98] shrink-0">
+                            <svg class="w-3.5 h-3.5 text-[#D8BF8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>{{ __('contact.map.open_maps') }}</span>
+                            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Embedded Map Container with Gentle Hover & Entrance Transition -->
+                    <div class="relative h-[340px] sm:h-[420px] lg:h-[450px] w-full bg-[#F5F5F7] overflow-hidden">
+                        <iframe
+                            src="https://maps.google.com/maps?q={{ $encodedMapAddress }}&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            title="{{ __('contact.map.title') }}"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full border-0 grayscale-[20%] contrast-[1.03] transition-all duration-700 ease-out group-hover:grayscale-0 group-hover:scale-[1.01]"
+                            allowfullscreen>
+                        </iframe>
+
+                        <!-- Floating Glassmorphic Location Pill -->
+                        <div class="pointer-events-none absolute bottom-4 left-4 sm:bottom-6 sm:left-6 hidden sm:inline-flex items-center space-x-3 px-4 py-3 rounded-2xl bg-white/90 backdrop-blur-md border border-black/[0.08] shadow-[0_12px_30px_rgba(0,0,0,0.08)] transition-all duration-500 ease-out group-hover:-translate-y-1">
+                            <span class="relative flex h-2.5 w-2.5 shrink-0">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C81E1E] opacity-60"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#C81E1E]"></span>
+                            </span>
+                            <div class="text-left">
+                                <span class="block text-[11px] font-bold text-[#18181B] leading-tight">SCHMITZ MAKİNA</span>
+                                <span class="block text-[10px] text-[#6E6E73] font-medium mt-0.5">{{ __('contact.map.badge_city') }}</span>
                             </div>
                         </div>
                     </div>

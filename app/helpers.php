@@ -13,20 +13,20 @@ if (!function_exists('current_locale_url')) {
     {
         $supported = ['en', 'tr', 'de'];
         if (!in_array($targetLocale, $supported, true)) {
-            $targetLocale = 'en';
+            $targetLocale = 'tr';
         }
 
         $route = request()->route();
         if ($route && $route->getName()) {
             $name = $route->getName();
-            $baseName = preg_replace('/^(en|locale)\./', '', $name);
+            $baseName = preg_replace('/^(tr|en|locale)\./', '', $name);
 
             $params = request()->route()->parameters();
             unset($params['locale']);
 
-            if ($targetLocale === 'en') {
-                if (Route::has('en.' . $baseName)) {
-                    $url = route('en.' . $baseName, $params);
+            if ($targetLocale === 'tr') {
+                if (Route::has('tr.' . $baseName)) {
+                    $url = route('tr.' . $baseName, $params);
                 } elseif (Route::has($baseName)) {
                     $url = route($baseName, $params);
                 } else {
@@ -54,7 +54,7 @@ if (!function_exists('current_locale_url')) {
 
         $remainingPath = implode('/', $segments);
 
-        if ($targetLocale === 'en') {
+        if ($targetLocale === 'tr') {
             $url = url('/' . $remainingPath);
         } else {
             $url = url('/' . $targetLocale . ($remainingPath !== '' ? '/' . $remainingPath : ''));
@@ -78,11 +78,11 @@ if (!function_exists('localized_route')) {
     function localized_route(string $name, array $parameters = [], ?string $locale = null, bool $absolute = true): string
     {
         $locale = $locale ?? app()->getLocale();
-        $baseName = preg_replace('/^(en|locale)\./', '', $name);
+        $baseName = preg_replace('/^(tr|en|locale)\./', '', $name);
 
-        if ($locale === 'en' || !in_array($locale, ['tr', 'de'], true)) {
-            if (Route::has('en.' . $baseName)) {
-                return route('en.' . $baseName, $parameters, $absolute);
+        if ($locale === 'tr' || !in_array($locale, ['en', 'de'], true)) {
+            if (Route::has('tr.' . $baseName)) {
+                return route('tr.' . $baseName, $parameters, $absolute);
             }
             return route($baseName, $parameters, $absolute);
         }
