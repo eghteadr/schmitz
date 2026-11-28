@@ -43,6 +43,19 @@
                         <a href="mailto:{{ $companySettings->email_info }}" class="font-semibold text-schmitz-carbon hover:text-schmitz-gold transition-colors">{{ $companySettings->email_info }}</a>
                         <span class="block text-[11px] mt-1">{{ $companySettings->email_trade }}</span>
                     </div>
+                    <div class="p-3.5 rounded-2xl bg-white border border-black/[0.06] shadow-2xs">
+                        <p class="text-[11px] text-schmitz-appleText font-medium leading-relaxed mb-2.5">
+                            {{ __('messages.footer.contact_channels_note') }}
+                        </p>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <button type="button" onclick="openQuoteModal('General Business Inquiry')" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-full bg-schmitz-carbon hover:bg-schmitz-carbonMid text-white text-[11px] font-medium transition-colors cursor-pointer">
+                                {{ __('messages.footer.open_form_btn') }}
+                            </button>
+                            <a href="mailto:{{ $companySettings->email_info }}" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-full bg-schmitz-appleGray hover:bg-black/10 text-schmitz-carbon text-[11px] font-medium transition-colors">
+                                {{ __('messages.footer.send_email_btn') }}
+                            </a>
+                        </div>
+                    </div>
                     <div>
                         <span class="block text-[11px] text-schmitz-appleMuted mb-0.5">{{ __('messages.footer.registered_company') }}</span>
                         <p class="font-semibold text-schmitz-appleText">

@@ -60,6 +60,25 @@
                         </p>
                     </div>
 
+                    <!-- Clear Communication Channel Notice (Form or Email) -->
+                    <div class="hero-animate-3 mb-7 p-4 sm:p-5 rounded-2xl bg-[#F5F5F7] border border-[#B89758]/40 max-w-2xl">
+                        <div class="flex items-start space-x-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-[#18181B] text-[#D8BF8A] flex items-center justify-center shrink-0 mt-0.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="text-xs sm:text-sm font-bold text-[#18181B] tracking-tight mb-1">
+                                    {{ __('contact.hero.channel_notice_title') }}
+                                </h2>
+                                <p class="text-xs sm:text-[13px] text-[#6E6E73] leading-relaxed">
+                                    {{ __('contact.hero.channel_notice_desc') }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Sleek Apple-Style Quick Action Pills -->
                     <div class="hero-animate-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-10">
                         <a href="#inquiry-desk" class="group inline-flex items-center justify-center px-8 py-4 bg-schmitz-red hover:bg-schmitz-redHover text-white text-sm font-medium rounded-full transition-all duration-300 shadow-sm hover:shadow-xl active:scale-[0.98]">
