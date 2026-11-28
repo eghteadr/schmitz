@@ -88,6 +88,11 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{{ $canonicalUrl }}">
 
+<!-- Favicon & App Icons -->
+<link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png') }}">
+
 <!-- International SEO & Localization Alternate Tags -->
 <link rel="alternate" hreflang="en" href="{{ $hreflangEn }}">
 <link rel="alternate" hreflang="tr" href="{{ $hreflangTr }}">

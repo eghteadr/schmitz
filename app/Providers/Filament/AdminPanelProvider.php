@@ -33,6 +33,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->brandName('SCHMITZ | پنل مدیریت')
+            ->favicon(asset('images/favicon-32x32.png'))
             ->colors([
                 'primary' => [
                     50 => '#f2f5f8',
