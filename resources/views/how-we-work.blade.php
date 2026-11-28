@@ -21,7 +21,7 @@
     <!-- Custom Page Styles -->
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
 </head>
-<body class="selection:bg-schmitz-navy selection:text-white overflow-x-hidden bg-white text-schmitz-appleText">
+<body class="selection:bg-schmitz-carbon selection:text-white overflow-x-hidden bg-white text-schmitz-appleText">
 
     <!-- APPLE-STYLE FROSTED STICKY NAVIGATION -->
     @include('partials.header')
@@ -39,9 +39,9 @@
                     
                     <!-- Breadcrumb Pill -->
                     <div class="hero-animate-1 inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-[#F5F5F7]/95 border border-black/[0.06] mb-6">
-                        <a href="{{ route('home') }}" class="text-[11px] font-medium tracking-[0.16em] text-[#6E6E73] hover:text-[#13293F] transition-colors uppercase">{{ __('messages.nav.home') }}</a>
+                        <a href="{{ route('home') }}" class="text-[11px] font-medium tracking-[0.16em] text-[#6E6E73] hover:text-[#18181B] transition-colors uppercase">{{ __('messages.nav.home') }}</a>
                         <span class="text-[10px] text-[#B89758] font-bold">/</span>
-                        <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#13293F]">{{ __('messages.nav.process') }}</span>
+                        <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#18181B]">{{ __('messages.nav.process') }}</span>
                     </div>
 
                     <!-- Apple Display Headline -->
@@ -51,9 +51,9 @@
                             <span class="w-1.5 h-1.5 rounded-full bg-[#B89758]/50"></span>
                             <span class="text-[11px] font-semibold tracking-[0.18em] text-[#6E6E73] uppercase">{{ __('how_we_work.hero.sub_badge') }}</span>
                         </div>
-                        <h1 class="apple-display text-4xl sm:text-5xl lg:text-[58px] xl:text-[64px] font-bold text-[#13293F] leading-[1.06]">
+                        <h1 class="apple-display text-4xl sm:text-5xl lg:text-[58px] xl:text-[64px] font-bold text-[#18181B] leading-[1.06]">
                             {{ __('how_we_work.hero.title_line1') }}<br>
-                            <span class="text-[#13293F]/80">{{ __('how_we_work.hero.title_line2') }}</span>
+                            <span class="text-[#18181B]/80">{{ __('how_we_work.hero.title_line2') }}</span>
                         </h1>
                     </div>
 
@@ -66,11 +66,11 @@
 
                     <!-- Sleek Apple-Style Pill CTAs -->
                     <div class="hero-animate-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-11">
-                        <button onclick="openQuoteModal('General Business Inquiry')" class="group inline-flex items-center justify-center px-8 py-4 bg-[#13293F] hover:bg-[#1D3B58] text-white text-sm font-medium rounded-full transition-all duration-300 shadow-sm hover:shadow-xl active:scale-[0.98] cursor-pointer">
+                        <button onclick="openQuoteModal('General Business Inquiry')" class="group inline-flex items-center justify-center px-8 py-4 bg-schmitz-red hover:bg-schmitz-redHover text-white text-sm font-medium rounded-full transition-all duration-300 shadow-sm hover:shadow-xl active:scale-[0.98] cursor-pointer">
                             <span>{{ __('how_we_work.hero.cta_inquiry') }}</span>
                             <span class="ml-2 text-[#D8BF8A] transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </button>
-                        <a href="#steps" class="group inline-flex items-center justify-center px-8 py-4 bg-[#F5F5F7] hover:bg-[#E8E8ED] text-[#13293F] text-sm font-medium rounded-full transition-all duration-300 active:scale-[0.98]">
+                        <a href="#steps" class="group inline-flex items-center justify-center px-8 py-4 bg-[#F5F5F7] hover:bg-[#E8E8ED] text-[#18181B] text-sm font-medium rounded-full transition-all duration-300 active:scale-[0.98]">
                             <span>{{ __('how_we_work.hero.cta_steps') }}</span>
                             <span class="ml-2 text-[#B89758] transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
                         </a>
@@ -80,22 +80,22 @@
                     <div class="hero-animate-5 pt-7 border-t border-black/[0.07] grid grid-cols-2 sm:grid-cols-4 gap-5 text-xs">
                         <div>
                             <span class="text-[#B89758] font-mono text-[11px] block font-semibold mb-0.5">{{ __('how_we_work.hero.benchmarks.item1_label') }}</span>
-                            <span class="font-semibold text-[#13293F] block">{{ __('how_we_work.hero.benchmarks.item1_val') }}</span>
+                            <span class="font-semibold text-[#18181B] block">{{ __('how_we_work.hero.benchmarks.item1_val') }}</span>
                             <span class="text-[11px] text-[#6E6E73]">{{ __('how_we_work.hero.benchmarks.item1_sub') }}</span>
                         </div>
                         <div>
                             <span class="text-[#B89758] font-mono text-[11px] block font-semibold mb-0.5">{{ __('how_we_work.hero.benchmarks.item2_label') }}</span>
-                            <span class="font-semibold text-[#13293F] block">{{ __('how_we_work.hero.benchmarks.item2_val') }}</span>
+                            <span class="font-semibold text-[#18181B] block">{{ __('how_we_work.hero.benchmarks.item2_val') }}</span>
                             <span class="text-[11px] text-[#6E6E73]">{{ __('how_we_work.hero.benchmarks.item2_sub') }}</span>
                         </div>
                         <div>
                             <span class="text-[#B89758] font-mono text-[11px] block font-semibold mb-0.5">{{ __('how_we_work.hero.benchmarks.item3_label') }}</span>
-                            <span class="font-semibold text-[#13293F] block">{{ __('how_we_work.hero.benchmarks.item3_val') }}</span>
+                            <span class="font-semibold text-[#18181B] block">{{ __('how_we_work.hero.benchmarks.item3_val') }}</span>
                             <span class="text-[11px] text-[#6E6E73]">{{ __('how_we_work.hero.benchmarks.item3_sub') }}</span>
                         </div>
                         <div>
                             <span class="text-[#B89758] font-mono text-[11px] block font-semibold mb-0.5">{{ __('how_we_work.hero.benchmarks.item4_label') }}</span>
-                            <span class="font-semibold text-[#13293F] block">{{ __('how_we_work.hero.benchmarks.item4_val') }}</span>
+                            <span class="font-semibold text-[#18181B] block">{{ __('how_we_work.hero.benchmarks.item4_val') }}</span>
                             <span class="text-[11px] text-[#6E6E73]">{{ __('how_we_work.hero.benchmarks.item4_sub') }}</span>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
 
                 <!-- Right Bento Hub Card (5 Cols) -->
                 <div class="lg:col-span-5 hero-animate-3">
-                    <div class="bento-card dark-bento bg-gradient-to-br from-[#13293F] via-[#13293F] to-[#0B1826] text-white rounded-[32px] p-7 sm:p-9 shadow-[0_32px_64px_-16px_rgba(19,41,63,0.28)] relative">
+                    <div class="bento-card dark-bento bg-gradient-to-br from-[#18181B] via-[#18181B] to-[#09090B] text-white rounded-[32px] p-7 sm:p-9 shadow-[0_32px_64px_-16px_rgba(24,24,27,0.28)] relative">
                         <!-- Subtle Gold Glow Orbs -->
                         <div class="absolute -top-24 -right-24 w-60 h-60 rounded-full bg-[#B89758]/20 blur-3xl pointer-events-none"></div>
                         <div class="absolute -bottom-20 -left-20 w-52 h-52 rounded-full bg-white/[0.04] blur-2xl pointer-events-none"></div>
@@ -180,7 +180,7 @@
                 <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B89758] block mb-2">
                     {{ __('how_we_work.overview_track.badge') }}
                 </span>
-                <h2 class="apple-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#13293F] leading-tight mb-3">
+                <h2 class="apple-display text-2xl sm:text-3xl lg:text-4xl font-bold text-[#18181B] leading-tight mb-3">
                     {{ __('how_we_work.overview_track.title') }}
                 </h2>
                 <p class="text-sm sm:text-base text-[#6E6E73] leading-relaxed">
@@ -193,14 +193,14 @@
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 min-w-[720px] lg:min-w-0">
                     
                     <!-- Track 01 -->
-                    <a href="#step-01" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#13293F]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
+                    <a href="#step-01" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#18181B]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="w-8 h-8 rounded-xl bg-[#13293F] text-white text-xs font-bold flex items-center justify-center font-mono">01</span>
+                                <span class="w-8 h-8 rounded-xl bg-[#18181B] text-white text-xs font-bold flex items-center justify-center font-mono">01</span>
                                 <span class="text-[10px] text-[#B89758] font-bold opacity-0 group-hover:opacity-100 transition-opacity">↓</span>
                             </div>
                             <span class="text-[10px] font-mono uppercase tracking-wider text-[#B89758] block mb-1">STAGE 01</span>
-                            <h3 class="text-xs sm:text-[13px] font-bold text-[#13293F] group-hover:text-[#B89758] transition-colors leading-snug">
+                            <h3 class="text-xs sm:text-[13px] font-bold text-[#18181B] group-hover:text-[#B89758] transition-colors leading-snug">
                                 {{ __('how_we_work.overview_track.step1_nav') }}
                             </h3>
                         </div>
@@ -210,14 +210,14 @@
                     </a>
 
                     <!-- Track 02 -->
-                    <a href="#step-02" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#13293F]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
+                    <a href="#step-02" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#18181B]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#13293F] text-[#13293F] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">02</span>
+                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#18181B] text-[#18181B] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">02</span>
                                 <span class="text-[10px] text-[#B89758] font-bold opacity-0 group-hover:opacity-100 transition-opacity">↓</span>
                             </div>
                             <span class="text-[10px] font-mono uppercase tracking-wider text-[#B89758] block mb-1">STAGE 02</span>
-                            <h3 class="text-xs sm:text-[13px] font-bold text-[#13293F] group-hover:text-[#B89758] transition-colors leading-snug">
+                            <h3 class="text-xs sm:text-[13px] font-bold text-[#18181B] group-hover:text-[#B89758] transition-colors leading-snug">
                                 {{ __('how_we_work.overview_track.step2_nav') }}
                             </h3>
                         </div>
@@ -227,14 +227,14 @@
                     </a>
 
                     <!-- Track 03 -->
-                    <a href="#step-03" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#13293F]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
+                    <a href="#step-03" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#18181B]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#13293F] text-[#13293F] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">03</span>
+                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#18181B] text-[#18181B] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">03</span>
                                 <span class="text-[10px] text-[#B89758] font-bold opacity-0 group-hover:opacity-100 transition-opacity">↓</span>
                             </div>
                             <span class="text-[10px] font-mono uppercase tracking-wider text-[#B89758] block mb-1">STAGE 03</span>
-                            <h3 class="text-xs sm:text-[13px] font-bold text-[#13293F] group-hover:text-[#B89758] transition-colors leading-snug">
+                            <h3 class="text-xs sm:text-[13px] font-bold text-[#18181B] group-hover:text-[#B89758] transition-colors leading-snug">
                                 {{ __('how_we_work.overview_track.step3_nav') }}
                             </h3>
                         </div>
@@ -244,14 +244,14 @@
                     </a>
 
                     <!-- Track 04 -->
-                    <a href="#step-04" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#13293F]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
+                    <a href="#step-04" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#18181B]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#13293F] text-[#13293F] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">04</span>
+                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#18181B] text-[#18181B] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">04</span>
                                 <span class="text-[10px] text-[#B89758] font-bold opacity-0 group-hover:opacity-100 transition-opacity">↓</span>
                             </div>
                             <span class="text-[10px] font-mono uppercase tracking-wider text-[#B89758] block mb-1">STAGE 04</span>
-                            <h3 class="text-xs sm:text-[13px] font-bold text-[#13293F] group-hover:text-[#B89758] transition-colors leading-snug">
+                            <h3 class="text-xs sm:text-[13px] font-bold text-[#18181B] group-hover:text-[#B89758] transition-colors leading-snug">
                                 {{ __('how_we_work.overview_track.step4_nav') }}
                             </h3>
                         </div>
@@ -261,14 +261,14 @@
                     </a>
 
                     <!-- Track 05 -->
-                    <a href="#step-05" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#13293F]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
+                    <a href="#step-05" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#18181B]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#13293F] text-[#13293F] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">05</span>
+                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#18181B] text-[#18181B] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">05</span>
                                 <span class="text-[10px] text-[#B89758] font-bold opacity-0 group-hover:opacity-100 transition-opacity">↓</span>
                             </div>
                             <span class="text-[10px] font-mono uppercase tracking-wider text-[#B89758] block mb-1">STAGE 05</span>
-                            <h3 class="text-xs sm:text-[13px] font-bold text-[#13293F] group-hover:text-[#B89758] transition-colors leading-snug">
+                            <h3 class="text-xs sm:text-[13px] font-bold text-[#18181B] group-hover:text-[#B89758] transition-colors leading-snug">
                                 {{ __('how_we_work.overview_track.step5_nav') }}
                             </h3>
                         </div>
@@ -278,14 +278,14 @@
                     </a>
 
                     <!-- Track 06 -->
-                    <a href="#step-06" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#13293F]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
+                    <a href="#step-06" class="group bento-card bg-white p-5 rounded-2xl border border-black/[0.06] hover:border-[#18181B]/30 transition-all flex flex-col justify-between h-full shadow-2xs hover:shadow-md">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#13293F] text-[#13293F] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">06</span>
+                                <span class="w-8 h-8 rounded-xl bg-[#F5F5F7] group-hover:bg-[#18181B] text-[#18181B] group-hover:text-white text-xs font-bold flex items-center justify-center font-mono transition-colors">06</span>
                                 <span class="text-[10px] text-[#B89758] font-bold opacity-0 group-hover:opacity-100 transition-opacity">↓</span>
                             </div>
                             <span class="text-[10px] font-mono uppercase tracking-wider text-[#B89758] block mb-1">STAGE 06</span>
-                            <h3 class="text-xs sm:text-[13px] font-bold text-[#13293F] group-hover:text-[#B89758] transition-colors leading-snug">
+                            <h3 class="text-xs sm:text-[13px] font-bold text-[#18181B] group-hover:text-[#B89758] transition-colors leading-snug">
                                 {{ __('how_we_work.overview_track.step6_nav') }}
                             </h3>
                         </div>
@@ -316,7 +316,7 @@
                         <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B89758] block mb-3">
                             {{ __('how_we_work.steps.sticky_badge') }}
                         </span>
-                        <h2 class="apple-display text-2xl sm:text-3xl font-bold text-[#13293F] leading-tight mb-4">
+                        <h2 class="apple-display text-2xl sm:text-3xl font-bold text-[#18181B] leading-tight mb-4">
                             {{ __('how_we_work.steps.sticky_title') }}
                         </h2>
                         <p class="text-sm sm:text-[15px] text-[#6E6E73] leading-relaxed mb-6 font-normal">
@@ -327,27 +327,27 @@
                         <div class="space-y-2 pt-5 border-t border-black/[0.06] text-xs">
                             <span class="text-[10px] uppercase font-bold tracking-wider text-[#6E6E73] block mb-1">Workflow Milestones</span>
                             <div class="grid grid-cols-2 gap-2 font-medium">
-                                <a href="#step-01" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#13293F] hover:text-white transition-colors text-[#13293F] border border-black/[0.04] flex items-center space-x-1.5">
+                                <a href="#step-01" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#18181B] hover:text-white transition-colors text-[#18181B] border border-black/[0.04] flex items-center space-x-1.5">
                                     <span class="font-mono text-[#B89758] font-bold">01</span>
                                     <span class="truncate">Inquiry</span>
                                 </a>
-                                <a href="#step-02" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#13293F] hover:text-white transition-colors text-[#13293F] border border-black/[0.04] flex items-center space-x-1.5">
+                                <a href="#step-02" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#18181B] hover:text-white transition-colors text-[#18181B] border border-black/[0.04] flex items-center space-x-1.5">
                                     <span class="font-mono text-[#B89758] font-bold">02</span>
                                     <span class="truncate">Sourcing</span>
                                 </a>
-                                <a href="#step-03" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#13293F] hover:text-white transition-colors text-[#13293F] border border-black/[0.04] flex items-center space-x-1.5">
+                                <a href="#step-03" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#18181B] hover:text-white transition-colors text-[#18181B] border border-black/[0.04] flex items-center space-x-1.5">
                                     <span class="font-mono text-[#B89758] font-bold">03</span>
                                     <span class="truncate">Quotation</span>
                                 </a>
-                                <a href="#step-04" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#13293F] hover:text-white transition-colors text-[#13293F] border border-black/[0.04] flex items-center space-x-1.5">
+                                <a href="#step-04" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#18181B] hover:text-white transition-colors text-[#18181B] border border-black/[0.04] flex items-center space-x-1.5">
                                     <span class="font-mono text-[#B89758] font-bold">04</span>
                                     <span class="truncate">Orders</span>
                                 </a>
-                                <a href="#step-05" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#13293F] hover:text-white transition-colors text-[#13293F] border border-black/[0.04] flex items-center space-x-1.5">
+                                <a href="#step-05" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#18181B] hover:text-white transition-colors text-[#18181B] border border-black/[0.04] flex items-center space-x-1.5">
                                     <span class="font-mono text-[#B89758] font-bold">05</span>
                                     <span class="truncate">Logistics</span>
                                 </a>
-                                <a href="#step-06" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#13293F] hover:text-white transition-colors text-[#13293F] border border-black/[0.04] flex items-center space-x-1.5">
+                                <a href="#step-06" class="px-2.5 py-1.5 rounded-lg bg-white hover:bg-[#18181B] hover:text-white transition-colors text-[#18181B] border border-black/[0.04] flex items-center space-x-1.5">
                                     <span class="font-mono text-[#B89758] font-bold">06</span>
                                     <span class="truncate">Delivery</span>
                                 </a>
@@ -356,13 +356,13 @@
                     </div>
 
                     <!-- Mini CTA Card -->
-                    <div class="bento-card dark-bento bg-gradient-to-br from-[#13293F] to-[#0B1826] text-white p-7 rounded-[26px] shadow-md">
+                    <div class="bento-card dark-bento bg-gradient-to-br from-[#18181B] to-[#09090B] text-white p-7 rounded-[26px] shadow-md">
                         <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-[#D8BF8A] block mb-2">{{ __('how_we_work.steps.step1.label') }} — {{ __('how_we_work.steps.step6.label') }}</span>
                         <h3 class="text-base font-bold text-white mb-2">{{ __('how_we_work.steps.sticky_card_title') }}</h3>
                         <p class="text-xs text-white/70 leading-relaxed mb-5">
                             {{ __('how_we_work.steps.sticky_card_desc') }}
                         </p>
-                        <button onclick="openQuoteModal('General Business Inquiry')" class="w-full py-3 bg-[#B89758] hover:bg-[#A38346] text-[#13293F] font-semibold text-xs tracking-wider uppercase rounded-full transition-all duration-300 shadow-sm cursor-pointer active:scale-[0.98]">
+                        <button onclick="openQuoteModal('General Business Inquiry')" class="w-full py-3 bg-[#B89758] hover:bg-[#A38346] text-[#18181B] font-semibold text-xs tracking-wider uppercase rounded-full transition-all duration-300 shadow-sm cursor-pointer active:scale-[0.98]">
                             {{ __('how_we_work.steps.sticky_card_btn') }}
                         </button>
                     </div>
@@ -378,16 +378,16 @@
                     <div id="step-01" class="bento-card bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.07] shadow-xs scroll-mt-28 reveal-up">
                         <div class="flex flex-wrap items-center justify-between gap-3 mb-6 pb-6 border-b border-black/[0.06]">
                             <div class="flex items-center space-x-3.5">
-                                <span class="w-11 h-11 rounded-2xl bg-[#13293F] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">01</span>
+                                <span class="w-11 h-11 rounded-2xl bg-[#18181B] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">01</span>
                                 <div>
                                     <span class="text-[11px] font-mono font-bold uppercase tracking-[0.18em] text-[#B89758] block">{{ __('how_we_work.steps.step1.label') }}</span>
                                     <span class="text-xs font-semibold text-[#6E6E73]">{{ __('how_we_work.steps.step1.tagline') }}</span>
                                 </div>
                             </div>
-                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#13293F] font-medium border border-black/[0.05]">Initial Milestone</span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#18181B] font-medium border border-black/[0.05]">Initial Milestone</span>
                         </div>
 
-                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#13293F] mb-4">
+                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#18181B] mb-4">
                             {{ __('how_we_work.steps.step1.title') }}
                         </h3>
 
@@ -397,13 +397,13 @@
 
                         <!-- Bullets Block -->
                         <div class="p-6 rounded-2xl bg-[#F5F5F7] border border-black/[0.04] mb-5">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-[#13293F] block mb-3.5">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#18181B] block mb-3.5">
                                 {{ __('how_we_work.steps.step1.bullets_title') }}
                             </span>
                             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-[13px]">
                                 @foreach(__('how_we_work.steps.step1.bullets') as $bullet)
                                     <li class="flex items-start space-x-2.5">
-                                        <span class="w-4 h-4 rounded-full bg-[#13293F]/10 text-[#13293F] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                                        <span class="w-4 h-4 rounded-full bg-[#18181B]/10 text-[#18181B] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
                                         <span class="text-[#1D1D1F] font-medium leading-relaxed">{{ $bullet }}</span>
                                     </li>
                                 @endforeach
@@ -428,16 +428,16 @@
                     <div id="step-02" class="bento-card bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.07] shadow-xs scroll-mt-28 reveal-up">
                         <div class="flex flex-wrap items-center justify-between gap-3 mb-6 pb-6 border-b border-black/[0.06]">
                             <div class="flex items-center space-x-3.5">
-                                <span class="w-11 h-11 rounded-2xl bg-[#13293F] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">02</span>
+                                <span class="w-11 h-11 rounded-2xl bg-[#18181B] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">02</span>
                                 <div>
                                     <span class="text-[11px] font-mono font-bold uppercase tracking-[0.18em] text-[#B89758] block">{{ __('how_we_work.steps.step2.label') }}</span>
                                     <span class="text-xs font-semibold text-[#6E6E73]">{{ __('how_we_work.steps.step2.tagline') }}</span>
                                 </div>
                             </div>
-                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#13293F] font-medium border border-black/[0.05]">Market Discovery</span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#18181B] font-medium border border-black/[0.05]">Market Discovery</span>
                         </div>
 
-                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#13293F] mb-4">
+                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#18181B] mb-4">
                             {{ __('how_we_work.steps.step2.title') }}
                         </h3>
 
@@ -447,13 +447,13 @@
 
                         <!-- Bullets Block -->
                         <div class="p-6 rounded-2xl bg-[#F5F5F7] border border-black/[0.04] mb-5">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-[#13293F] block mb-3.5">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#18181B] block mb-3.5">
                                 {{ __('how_we_work.steps.step2.bullets_title') }}
                             </span>
                             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-[13px]">
                                 @foreach(__('how_we_work.steps.step2.bullets') as $bullet)
                                     <li class="flex items-start space-x-2.5">
-                                        <span class="w-4 h-4 rounded-full bg-[#13293F]/10 text-[#13293F] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                                        <span class="w-4 h-4 rounded-full bg-[#18181B]/10 text-[#18181B] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
                                         <span class="text-[#1D1D1F] font-medium leading-relaxed">{{ $bullet }}</span>
                                     </li>
                                 @endforeach
@@ -462,7 +462,7 @@
 
                         <!-- Sourcing Note -->
                         <div class="flex items-start space-x-3 p-4 rounded-xl bg-slate-50 border border-slate-200/70 text-xs text-slate-700 leading-relaxed">
-                            <svg class="w-4 h-4 text-[#13293F] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-[#18181B] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                             <p>
@@ -477,22 +477,22 @@
                     <!-- ========================================== -->
                     <div id="step-03" class="bento-card bg-gradient-to-br from-white via-white to-[#F5F5F7] rounded-[32px] p-8 sm:p-10 border-2 border-[#B89758]/30 shadow-md scroll-mt-28 reveal-up relative">
                         <!-- Top Accent Banner -->
-                        <div class="absolute -top-3 right-8 px-3.5 py-1 rounded-full bg-[#13293F] text-white text-[10px] font-bold tracking-widest uppercase shadow-xs">
+                        <div class="absolute -top-3 right-8 px-3.5 py-1 rounded-full bg-[#18181B] text-white text-[10px] font-bold tracking-widest uppercase shadow-xs">
                             Core Transaction Anchor
                         </div>
 
                         <div class="flex flex-wrap items-center justify-between gap-3 mb-6 pb-6 border-b border-black/[0.06]">
                             <div class="flex items-center space-x-3.5">
-                                <span class="w-11 h-11 rounded-2xl bg-[#B89758] text-[#13293F] text-sm font-bold flex items-center justify-center font-mono shadow-2xs">03</span>
+                                <span class="w-11 h-11 rounded-2xl bg-[#B89758] text-[#18181B] text-sm font-bold flex items-center justify-center font-mono shadow-2xs">03</span>
                                 <div>
                                     <span class="text-[11px] font-mono font-bold uppercase tracking-[0.18em] text-[#B89758] block">{{ __('how_we_work.steps.step3.label') }}</span>
                                     <span class="text-xs font-semibold text-[#6E6E73]">{{ __('how_we_work.steps.step3.tagline') }}</span>
                                 </div>
                             </div>
-                            <span class="text-xs px-3 py-1 rounded-full bg-[#13293F] text-white font-medium">Incoterms® 2020</span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-[#18181B] text-white font-medium">Incoterms® 2020</span>
                         </div>
 
-                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#13293F] mb-4">
+                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#18181B] mb-4">
                             {{ __('how_we_work.steps.step3.title') }}
                         </h3>
 
@@ -502,13 +502,13 @@
 
                         <!-- Bullets Block (8 Commercial Bullets) -->
                         <div class="p-6 rounded-2xl bg-white border border-black/[0.06] mb-5 shadow-2xs">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-[#13293F] block mb-3.5">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#18181B] block mb-3.5">
                                 {{ __('how_we_work.steps.step3.bullets_title') }}
                             </span>
                             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-[13px]">
                                 @foreach(__('how_we_work.steps.step3.bullets') as $bullet)
                                     <li class="flex items-start space-x-2.5">
-                                        <span class="w-4 h-4 rounded-full bg-[#B89758]/20 text-[#13293F] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">●</span>
+                                        <span class="w-4 h-4 rounded-full bg-[#B89758]/20 text-[#18181B] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">●</span>
                                         <span class="text-[#1D1D1F] font-medium leading-relaxed">{{ $bullet }}</span>
                                     </li>
                                 @endforeach
@@ -516,10 +516,10 @@
                         </div>
 
                         <!-- Incoterms® Note -->
-                        <div class="flex items-start space-x-3 p-4 rounded-xl bg-[#13293F]/[0.03] border border-[#13293F]/10 text-xs text-[#13293F] leading-relaxed">
-                            <span class="px-2 py-0.5 rounded bg-[#13293F] text-white text-[10px] font-bold font-mono shrink-0 mt-0.5">ICC</span>
+                        <div class="flex items-start space-x-3 p-4 rounded-xl bg-[#18181B]/[0.03] border border-[#18181B]/10 text-xs text-[#18181B] leading-relaxed">
+                            <span class="px-2 py-0.5 rounded bg-[#18181B] text-white text-[10px] font-bold font-mono shrink-0 mt-0.5">ICC</span>
                             <p>
-                                <strong class="font-semibold text-[#13293F]">Trade Terms Reference:</strong> {{ __('how_we_work.steps.step3.note') }}
+                                <strong class="font-semibold text-[#18181B]">Trade Terms Reference:</strong> {{ __('how_we_work.steps.step3.note') }}
                             </p>
                         </div>
                     </div>
@@ -531,16 +531,16 @@
                     <div id="step-04" class="bento-card bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.07] shadow-xs scroll-mt-28 reveal-up">
                         <div class="flex flex-wrap items-center justify-between gap-3 mb-6 pb-6 border-b border-black/[0.06]">
                             <div class="flex items-center space-x-3.5">
-                                <span class="w-11 h-11 rounded-2xl bg-[#13293F] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">04</span>
+                                <span class="w-11 h-11 rounded-2xl bg-[#18181B] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">04</span>
                                 <div>
                                     <span class="text-[11px] font-mono font-bold uppercase tracking-[0.18em] text-[#B89758] block">{{ __('how_we_work.steps.step4.label') }}</span>
                                     <span class="text-xs font-semibold text-[#6E6E73]">{{ __('how_we_work.steps.step4.tagline') }}</span>
                                 </div>
                             </div>
-                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#13293F] font-medium border border-black/[0.05]">Execution & Tracking</span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#18181B] font-medium border border-black/[0.05]">Execution & Tracking</span>
                         </div>
 
-                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#13293F] mb-4">
+                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#18181B] mb-4">
                             {{ __('how_we_work.steps.step4.title') }}
                         </h3>
 
@@ -550,13 +550,13 @@
 
                         <!-- Bullets Block -->
                         <div class="p-6 rounded-2xl bg-[#F5F5F7] border border-black/[0.04] mb-5">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-[#13293F] block mb-3.5">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#18181B] block mb-3.5">
                                 {{ __('how_we_work.steps.step4.bullets_title') }}
                             </span>
                             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-[13px]">
                                 @foreach(__('how_we_work.steps.step4.bullets') as $bullet)
                                     <li class="flex items-start space-x-2.5">
-                                        <span class="w-4 h-4 rounded-full bg-[#13293F]/10 text-[#13293F] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                                        <span class="w-4 h-4 rounded-full bg-[#18181B]/10 text-[#18181B] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
                                         <span class="text-[#1D1D1F] font-medium leading-relaxed">{{ $bullet }}</span>
                                     </li>
                                 @endforeach
@@ -581,16 +581,16 @@
                     <div id="step-05" class="bento-card bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.07] shadow-xs scroll-mt-28 reveal-up">
                         <div class="flex flex-wrap items-center justify-between gap-3 mb-6 pb-6 border-b border-black/[0.06]">
                             <div class="flex items-center space-x-3.5">
-                                <span class="w-11 h-11 rounded-2xl bg-[#13293F] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">05</span>
+                                <span class="w-11 h-11 rounded-2xl bg-[#18181B] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">05</span>
                                 <div>
                                     <span class="text-[11px] font-mono font-bold uppercase tracking-[0.18em] text-[#B89758] block">{{ __('how_we_work.steps.step5.label') }}</span>
                                     <span class="text-xs font-semibold text-[#6E6E73]">{{ __('how_we_work.steps.step5.tagline') }}</span>
                                 </div>
                             </div>
-                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#13293F] font-medium border border-black/[0.05]">Global Freight</span>
+                            <span class="text-xs px-3 py-1 rounded-full bg-[#F5F5F7] text-[#18181B] font-medium border border-black/[0.05]">Global Freight</span>
                         </div>
 
-                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#13293F] mb-4">
+                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#18181B] mb-4">
                             {{ __('how_we_work.steps.step5.title') }}
                         </h3>
 
@@ -598,15 +598,25 @@
                             {{ __('how_we_work.steps.step5.intro') }}
                         </p>
 
+                        <!-- Logistics Visual -->
+                        <div class="rounded-2xl overflow-hidden aspect-video mb-6 bg-[#18181B] group">
+                            <img 
+                                src="{{ asset('images/International Freight Terminal.jpg') }}" 
+                                alt="{{ __('how_we_work.steps.step5.title') }}" 
+                                loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            >
+                        </div>
+
                         <!-- Bullets Block (7 Shipment & Docs Bullets) -->
                         <div class="p-6 rounded-2xl bg-[#F5F5F7] border border-black/[0.04] mb-5">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-[#13293F] block mb-3.5">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#18181B] block mb-3.5">
                                 {{ __('how_we_work.steps.step5.bullets_title') }}
                             </span>
                             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-[13px]">
                                 @foreach(__('how_we_work.steps.step5.bullets') as $bullet)
                                     <li class="flex items-start space-x-2.5">
-                                        <span class="w-4 h-4 rounded-full bg-[#13293F]/10 text-[#13293F] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                                        <span class="w-4 h-4 rounded-full bg-[#18181B]/10 text-[#18181B] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
                                         <span class="text-[#1D1D1F] font-medium leading-relaxed">{{ $bullet }}</span>
                                     </li>
                                 @endforeach
@@ -631,7 +641,7 @@
                     <div id="step-06" class="bento-card bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.07] shadow-xs scroll-mt-28 reveal-up">
                         <div class="flex flex-wrap items-center justify-between gap-3 mb-6 pb-6 border-b border-black/[0.06]">
                             <div class="flex items-center space-x-3.5">
-                                <span class="w-11 h-11 rounded-2xl bg-[#13293F] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">06</span>
+                                <span class="w-11 h-11 rounded-2xl bg-[#18181B] text-white text-sm font-bold flex items-center justify-center font-mono shadow-2xs">06</span>
                                 <div>
                                     <span class="text-[11px] font-mono font-bold uppercase tracking-[0.18em] text-[#B89758] block">{{ __('how_we_work.steps.step6.label') }}</span>
                                     <span class="text-xs font-semibold text-[#6E6E73]">{{ __('how_we_work.steps.step6.tagline') }}</span>
@@ -640,7 +650,7 @@
                             <span class="text-xs px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 font-medium border border-emerald-200/60">Final Closure</span>
                         </div>
 
-                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#13293F] mb-4">
+                        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-[#18181B] mb-4">
                             {{ __('how_we_work.steps.step6.title') }}
                         </h3>
 
@@ -650,13 +660,13 @@
 
                         <!-- Bullets Block (5 Closure Bullets) -->
                         <div class="p-6 rounded-2xl bg-[#F5F5F7] border border-black/[0.04] mb-5">
-                            <span class="text-xs font-semibold uppercase tracking-wider text-[#13293F] block mb-3.5">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#18181B] block mb-3.5">
                                 {{ __('how_we_work.steps.step6.bullets_title') }}
                             </span>
                             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-[13px]">
                                 @foreach(__('how_we_work.steps.step6.bullets') as $bullet)
                                     <li class="flex items-start space-x-2.5">
-                                        <span class="w-4 h-4 rounded-full bg-[#13293F]/10 text-[#13293F] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
+                                        <span class="w-4 h-4 rounded-full bg-[#18181B]/10 text-[#18181B] text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">✓</span>
                                         <span class="text-[#1D1D1F] font-medium leading-relaxed">{{ $bullet }}</span>
                                     </li>
                                 @endforeach
@@ -691,7 +701,7 @@
                 <span class="text-xs font-semibold uppercase tracking-[0.2em] text-[#B89758] block mb-3">
                     {{ __('how_we_work.industries_banner.badge') }}
                 </span>
-                <h2 class="apple-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#13293F] leading-tight">
+                <h2 class="apple-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#18181B] leading-tight">
                     {{ __('how_we_work.industries_banner.title') }}
                 </h2>
             </div>
@@ -700,15 +710,17 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10 mb-12 reveal-up">
                 
                 <!-- Wool Tops / Textile Raw Materials -->
-                <div class="bento-card bg-white rounded-[28px] p-8 sm:p-9 border border-black/[0.06] shadow-2xs flex flex-col justify-between">
+                <div class="bento-card bg-white rounded-[28px] p-8 sm:p-9 border border-black/[0.06] shadow-2xs flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-[#13293F]/5 text-[#13293F] flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-[#13293F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <circle cx="12" cy="12" r="8" stroke-dasharray="2 2" />
-                                <path d="M12 4v16M4 12h16" />
-                            </svg>
+                        <div class="rounded-2xl overflow-hidden aspect-video mb-6 bg-[#18181B]">
+                            <img 
+                                src="{{ asset('images/Wool Spinning Mill Bobbins.jpg') }}" 
+                                alt="{{ __('how_we_work.industries_banner.feature1_title') }}" 
+                                loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            >
                         </div>
-                        <h3 class="text-xl font-bold text-[#13293F] mb-3.5">
+                        <h3 class="text-xl font-bold text-[#18181B] mb-3.5">
                             {{ __('how_we_work.industries_banner.feature1_title') }}
                         </h3>
                         <p class="text-sm text-[#6E6E73] leading-relaxed font-normal">
@@ -721,15 +733,17 @@
                 </div>
 
                 <!-- Industrial Machinery & Equipment -->
-                <div class="bento-card bg-white rounded-[28px] p-8 sm:p-9 border border-black/[0.06] shadow-2xs flex flex-col justify-between">
+                <div class="bento-card bg-white rounded-[28px] p-8 sm:p-9 border border-black/[0.06] shadow-2xs flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-[#13293F]/5 text-[#13293F] flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-[#13293F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <rect x="3" y="4" width="18" height="16" rx="2" />
-                                <path d="M8 12h8M12 8v8" />
-                            </svg>
+                        <div class="rounded-2xl overflow-hidden aspect-video mb-6 bg-[#18181B]">
+                            <img 
+                                src="{{ asset('images/Industrial CNC Turning Center.jpg') }}" 
+                                alt="{{ __('how_we_work.industries_banner.feature2_title') }}" 
+                                loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            >
                         </div>
-                        <h3 class="text-xl font-bold text-[#13293F] mb-3.5">
+                        <h3 class="text-xl font-bold text-[#18181B] mb-3.5">
                             {{ __('how_we_work.industries_banner.feature2_title') }}
                         </h3>
                         <p class="text-sm text-[#6E6E73] leading-relaxed font-normal">
@@ -742,16 +756,17 @@
                 </div>
 
                 <!-- Other Commercial Products -->
-                <div class="bento-card bg-white rounded-[28px] p-8 sm:p-9 border border-black/[0.06] shadow-2xs flex flex-col justify-between">
+                <div class="bento-card bg-white rounded-[28px] p-8 sm:p-9 border border-black/[0.06] shadow-2xs flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-[#13293F]/5 text-[#13293F] flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-[#13293F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                                <line x1="12" y1="22.08" x2="12" y2="12" />
-                            </svg>
+                        <div class="rounded-2xl overflow-hidden aspect-video mb-6 bg-[#18181B]">
+                            <img 
+                                src="{{ asset('images/Industrial Supply Warehouse.jpg') }}" 
+                                alt="{{ __('how_we_work.industries_banner.feature3_title') }}" 
+                                loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            >
                         </div>
-                        <h3 class="text-xl font-bold text-[#13293F] mb-3.5">
+                        <h3 class="text-xl font-bold text-[#18181B] mb-3.5">
                             {{ __('how_we_work.industries_banner.feature3_title') }}
                         </h3>
                         <p class="text-sm text-[#6E6E73] leading-relaxed font-normal">
@@ -774,7 +789,7 @@
     <!-- ========================================================================= -->
     <section class="py-20 sm:py-28 bg-white">
         <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12 reveal-up">
-            <div class="bento-card dark-bento bg-gradient-to-br from-[#13293F] via-[#13293F] to-[#0B1826] rounded-[34px] p-10 sm:p-14 lg:p-16 relative overflow-hidden shadow-2xl text-white">
+            <div class="bento-card dark-bento bg-gradient-to-br from-[#18181B] via-[#18181B] to-[#09090B] rounded-[34px] p-10 sm:p-14 lg:p-16 relative overflow-hidden shadow-2xl text-white">
                 <!-- Ambient Glow Orbs -->
                 <div class="absolute -top-28 -right-28 w-[400px] h-[400px] rounded-full bg-[#B89758]/15 blur-3xl pointer-events-none"></div>
                 <div class="absolute -bottom-28 -left-28 w-[340px] h-[340px] rounded-full bg-white/[0.04] blur-3xl pointer-events-none"></div>
@@ -792,7 +807,7 @@
                         </p>
                     </div>
                     <div class="shrink-0 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-                        <button onclick="openQuoteModal('General Business Inquiry')" class="group inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-[#F5F5F7] text-[#13293F] text-sm font-semibold rounded-full transition-all duration-300 shadow-md hover:shadow-xl active:scale-[0.98] cursor-pointer">
+                        <button onclick="openQuoteModal('General Business Inquiry')" class="group inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-[#F5F5F7] text-[#18181B] text-sm font-semibold rounded-full transition-all duration-300 shadow-md hover:shadow-xl active:scale-[0.98] cursor-pointer">
                             <span>{{ __('how_we_work.cta.btn_inquiry') }}</span>
                             <span class="ml-2 text-[#B89758] transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </button>

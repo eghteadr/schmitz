@@ -45,7 +45,7 @@
         'name' => 'SCHMITZ',
         'legalName' => $settings->legal_name ?: 'SCHMITZ MAKİNA SAN. İÇ VE DIŞ TİC. LTD. ŞTİ.',
         'url' => url('/'),
-        'logo' => $seoOgImage,
+        'logo' => asset('images/logo.png'),
         'email' => $settings->email_info ?: 'info@schmitzglobal.com',
         'address' => [
             '@type' => 'PostalAddress',

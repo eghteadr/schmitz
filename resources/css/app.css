@@ -7,9 +7,11 @@
 @theme {
     --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-    --color-schmitz-navy: #13293F;
-    --color-schmitz-navyMid: #1D3B58;
-    --color-schmitz-dark: #0B1826;
+    --color-schmitz-carbon: #18181B;
+    --color-schmitz-carbonMid: #27272A;
+    --color-schmitz-dark: #09090B;
+    --color-schmitz-red: #C81E1E;
+    --color-schmitz-redHover: #A61717;
     --color-schmitz-gold: #B89758;
     --color-schmitz-goldSoft: #D8BF8A;
     --color-schmitz-appleGray: #F5F5F7;
